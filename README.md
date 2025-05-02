@@ -3,7 +3,7 @@
  
  ## Emphasis
  
- *This Project will show the list of gadgets and we can add modify and delete*  
+ *This Project will show the list of NewsChannels List*  
  
  
  ## Lists
