@@ -3,7 +3,7 @@
  
  ## Emphasis
  
- *This Project will show the list of NewsChannels List*  
+ *This Project will show the list of NewsChannels*  
  
  
  ## Lists
