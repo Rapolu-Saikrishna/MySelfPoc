@@ -11,7 +11,7 @@
  ### Technology used 
  
  * Kotlin
- * Koin
  * live data
- * viewmodel 
+ * viewmodel
+ * Hilt
  * States
