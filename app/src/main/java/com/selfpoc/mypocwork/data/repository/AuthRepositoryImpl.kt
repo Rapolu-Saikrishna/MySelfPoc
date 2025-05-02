@@ -3,7 +3,7 @@ package com.selfpoc.mypocwork.data.repository
 import com.selfpoc.mypocwork.data.remote.ApiService
 import com.selfpoc.mypocwork.domain.model.LoginRequest
 import com.selfpoc.mypocwork.domain.model.LoginResponse
-import com.poc.mynewsapp.domain.repository.AuthRepository
+import com.selfpoc.mypocwork.domain.repository.AuthRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flow

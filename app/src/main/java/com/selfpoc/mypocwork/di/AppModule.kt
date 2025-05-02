@@ -5,7 +5,7 @@ import com.selfpoc.mypocwork.data.repository.AuthRepositoryImpl
 import com.selfpoc.mypocwork.data.repository.NewsDetailRepositoryImpl
 import com.selfpoc.mypocwork.data.repository.NewsRepositoryImpl
 import com.selfpoc.mypocwork.data.repository.RegisterRepositoryImpl
-import com.poc.mynewsapp.domain.repository.AuthRepository
+import com.selfpoc.mypocwork.domain.repository.AuthRepository
 import com.selfpoc.mypocwork.domain.repository.NewsDetailRepository
 import com.selfpoc.mypocwork.domain.repository.NewsRepository
 import com.selfpoc.mypocwork.domain.repository.RegisterRepository

@@ -43,7 +43,10 @@ fun NewsDetailScreen(viewModel: NewsDetailViewModel = hiltViewModel()) {
             state.detail != null -> Column(modifier = Modifier.padding(16.dp)) {
                 Text(text = state.detail!!.title, style = MaterialTheme.typography.h5)
                 Spacer(modifier = Modifier.height(4.dp))
-                Text("By ${state.detail!!.author} on ${state.detail!!.publishedAt}", style = MaterialTheme.typography.caption)
+                Text(
+                    "By ${state.detail!!.author} on ${state.detail!!.publishedAt}",
+                    style = MaterialTheme.typography.caption
+                )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(state.detail!!.content, style = MaterialTheme.typography.body1)
             }

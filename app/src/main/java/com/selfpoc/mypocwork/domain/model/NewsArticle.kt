@@ -1,4 +1,4 @@
-package com.selfpoc.mypocwork.data.model
+package com.selfpoc.mypocwork.domain.model
 
 data class NewsArticle(
     val id: String,

@@ -18,9 +18,17 @@ class RegisterViewModel @Inject constructor(
     private val _uiState = MutableStateFlow(RegisterUiState())
     val uiState: StateFlow<RegisterUiState> = _uiState
 
-    fun onNameChange(value: String) { _uiState.value = _uiState.value.copy(name = value) }
-    fun onEmailChange(value: String) { _uiState.value = _uiState.value.copy(email = value) }
-    fun onPasswordChange(value: String) { _uiState.value = _uiState.value.copy(password = value) }
+    fun onNameChange(value: String) {
+        _uiState.value = _uiState.value.copy(name = value)
+    }
+
+    fun onEmailChange(value: String) {
+        _uiState.value = _uiState.value.copy(email = value)
+    }
+
+    fun onPasswordChange(value: String) {
+        _uiState.value = _uiState.value.copy(password = value)
+    }
 
     fun register() {
         val state = _uiState.value
@@ -31,7 +39,13 @@ class RegisterViewModel @Inject constructor(
 
         viewModelScope.launch {
             _uiState.value = state.copy(isLoading = true, error = null)
-            registerUseCase(RegisterRequest(state.name, state.email, state.password)).collect { result ->
+            registerUseCase(
+                RegisterRequest(
+                    state.name,
+                    state.email,
+                    state.password
+                )
+            ).collect { result ->
                 result.onSuccess {
                     _uiState.value = _uiState.value.copy(isLoading = false, success = true)
                 }.onFailure {

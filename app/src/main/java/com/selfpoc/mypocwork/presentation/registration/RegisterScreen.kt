@@ -80,7 +80,10 @@ fun RegisterScreen(navController: NavController, viewModel: RegisterViewModel = 
             enabled = !state.isLoading,
             modifier = Modifier.fillMaxWidth()
         ) {
-            if (state.isLoading) CircularProgressIndicator(modifier = Modifier.size(20.dp), strokeWidth = 2.dp)
+            if (state.isLoading) CircularProgressIndicator(
+                modifier = Modifier.size(20.dp),
+                strokeWidth = 2.dp
+            )
             else Text("Register")
         }
 
